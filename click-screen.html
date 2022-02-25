@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+	<title>Click screen</title>
+	<link rel="stylesheet" href="css/click-screen.css">
+</head>
+<body>
+	<div class="box">
+		<div class="width">
+			Screen width: <span id="width"></span>
+		</div>
+		<div id="height">
+			Screen height: <span></span>
+		</div>
+		<div >
+			Mouse position on page X: <span id="pageX"></span>
+		</div>
+		<div >
+			Mouse position on page Y: <span id="pageY"></span>
+		</div>
+		<div >
+			Mouse position on screen x: <span id="screenX"></span>
+		</div>
+		<div >
+			Mouse position on screen y: <span id="screenY"></span>
+		</div>
+	</div>
+
+	<div class="split-box">
+		<div class="split-child" onclick="screenTL()"></div>
+		<div class="split-child" onclick="screenTR()"></div>
+		<div class="split-child" onclick="screenBL()"></div>
+		<div class="split-child" onclick="screenBR()"></div>
+	</div>
+	
+	<script type="text/javascript" src="js/click-screen.js"></script>
+
+</body>
+</html>
